@@ -67,15 +67,16 @@ int Course::getNumberOfStudents() const
 	return numberOfStudents;
 }
 
-Course::Course(const Course& course)
-{
-	courseName = course.courseName;
-	numberOfStudents = course.numberOfStudents;
-	capacity = course.capacity;
-	students = new string[capacity];
-}
+//Course::Course(const Course& course)
+//{
+//	courseName = course.courseName;
+//	numberOfStudents = course.numberOfStudents;
+//	capacity = course.capacity;
+//	students = new string[capacity];
+//}
 
 void Course::clear()
 {
-	delete[] students;
+	for (int i = 0; i < numberOfStudents;i++)
+		students[i].clear();
 }

@@ -52,7 +52,7 @@ int main()
 		cout << students[i] << ", ";
 
 	cout << endl;
-	course1.clear;
+	course1.clear();
 	cout << "number of students in course1: " << course1.getNumberOfStudents() << endl;
 
 

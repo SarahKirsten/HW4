@@ -1,3 +1,6 @@
+//#pragma once
+#ifndef COURSE_H
+#define COURSE_H
 /////////////////////////
 //Program Name: EX04_05
 //Name: Sarah Kirsten
@@ -20,7 +23,7 @@ class Course
 public:
 	Course(const string& courseName, int capacity);
 	~Course();
-	Course(const Course&);
+	//Course(const Course&);
 	string getCourseName() const;
 	void Course::Resize(int newcap);
 	void addStudent(const string& name);
@@ -36,4 +39,4 @@ private:
 };
 
 
-#pragma once
+#endif
