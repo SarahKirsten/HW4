@@ -20,11 +20,14 @@ class Course
 public:
 	Course(const string& courseName, int capacity);
 	~Course();
+	Course(const Course&);
 	string getCourseName() const;
+	void Course::Resize(int newcap);
 	void addStudent(const string& name);
 	void dropStudent(const string& name);
 	string* getStudents() const;
 	int getNumberOfStudents() const;
+	void clear();
 private:
 	string courseName;
 	string* students;
